@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+   background-color:  #C5E4E7;  
+   
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 144px;
+}
+
+.calc{
+    width: 100%;
+    height: 789px;
+    background: #FFFFFF;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.tips {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.dollabill{
+    
+    display: flex;
+    flex-direction: column;
+}
+.billh4{
+    margin-top: 32px;
+    width: 47px;
+    height: 24px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E7A7D;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.costD{
+    text-align: right;
+    color: #00474B;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    padding-right: 8px;
+    width: 311px;
+    height: 48px;
+    background-color:#F3F9FA; 
+    border-radius: 5px;
+    border: none;
+    margin-top: 6px;
+    background-image: url(./tip-calculator-app-main/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 6% 50%;
+}
+
+
+.selecttip{
+    margin-top:32px ;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E7A7D;
+    width: 140px;
+    height: 24px; 
+}
+
+.tipslc{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 146.64px);
+    grid-auto-rows: 48px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 16px;
+    
+}
+
+.tip5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #00474B;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    
+}
+
+.tip5:hover{
+    background: #26C2AE;
+    cursor: pointer;
+}
+
+.tip10:hover{
+    background: #26C2AE;
+    cursor: pointer;
+}
+
+
+
+.tip15:hover{
+    background: #26C2AE;
+    cursor: pointer;
+}
+
+.tip25:hover{
+    background: #26C2AE;
+    cursor: pointer;
+}
+
+
+.tip50:hover{
+    background: #26C2AE;
+    cursor: pointer;
+}
+
+
+.tip10{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #00474B;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.tip15{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #00474B;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.tip25{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #00474B;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+
+.tip50{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #00474B;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.custom{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #F3F9FA;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: right;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    padding-right: 8px;
+    color: #00474B;
+}
+
+.custom:focus{
+    outline: 2px solid #26C2AE;
+}
+
+.customD{
+    color: #547878;  
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.percent{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.nuofpeople{
+    margin-top: 32px;
+}
+
+.people{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E7A7D;
+}
+
+.numberofP{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #00474B; 
+    margin-top: 6px;
+    width: 311px;
+    height: 48px;
+    background: #F3F9FA;
+    border-radius: 5px;
+    border: none;
+    background-image: url(./tip-calculator-app-main/images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 6% 50%;
+    text-align: right;
+    padding-right: 8px ;
+}
+
+.rightside{
+    margin-top:32px ;
+    width: 327px;
+    height: 257px;
+    background: #00474B;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tipA{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.tipamount{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+
+    color: #7F9D9F;
+}
+
+
+.tipamount span{
+    width: 98px;
+    height: 24px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.dollar{
+    width: 96px;
+    height: 47px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    text-align: right;
+    letter-spacing: -0.666667px;
+    color: #26C2AE;
+}
+
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.totalP{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7F9D9F;
+}
+
+.totalP span{
+    width: 98px;
+    height: 24px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.reset{
+    width: 281px;
+    height: 48px;
+    background: #26C2AE;
+    border-radius: 5px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00474B;
+    text-transform:uppercase;
+    border:none;
+    align-self: center;
+}
+
+.reset:hover{
+    background: #9FE8DF;
+    cursor: pointer;
+}
+
+.custom::placeholder {
+    color: #00474B;
+    text-align:right;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+@media screen and (min-width:920px){
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 300px;
+}
+
+.calc{
+    width: 920px;
+    height: 481px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: flex-start;
+    border-radius: 25px;
+}
+
+.dollabill{
+    margin-top: 32px;
+}
+
+.leftside{
+    width: 379px;
+    height: 388px;
+    margin-left: 28px;
+}
+
+.rightside{
+    width: 413px;
+    height: 417px;
+}
+.billh4{
+    width: 40px;
+    height: 24px;
+}
+
+.costD{
+    width: 375px;
+    height: 48px;
+}
+
+.tipslc{
+    grid-template-columns: repeat(3, 117.63px);
+    row-gap: 14px
+    ;
+}
+
+.selecttip{
+    margin-top: 40px;
+}
+
+.nuofpeople{
+    margin-top: 40px;
+}
+    
+.numberofP{
+    width: 379px;
+    height: 48px;
+}
+
+.dollar{
+    width: 143px;
+    height: 71px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+}
+
+.reset{
+    width:333px ;
+    height: 48px;
+}
+
+.total{
+    padding-bottom: 50px;
+}
+
+
+
+}

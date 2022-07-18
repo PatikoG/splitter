@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="splitter.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="splitter">
+            <img src="./tip-calculator-app-main/images/logo.svg">
+        </header>
+        <div class="calc">
+            <div class="leftside">
+                <div class="dollabill">
+                <label for="costB" class="billh4" > Bill</label>
+            
+                    <input oninput="costBill(this)" type="number" class="costD" id="costB">
+
+            </div>
+            <h4 class="selecttip">Select Tip %</h4>
+            <div class="tipslc">
+                
+                <button  onclick="percentCost(this)" class="tip5 tips" value="5">5%</button>
+                <button  onclick="percentCost(this)" class="tip10 tips" value="10">10%</button>
+                <button  onclick="percentCost(this)" class="tip15 tips" value="15">15%</button>
+                <button  onclick="percentCost(this)" class="tip25 tips" value="25">25%</h3></button>
+                <button  onclick="percentCost(this)"  class="tip50 tips" value="50">50%</h3></button>
+                <input oninput="customCost(this)" type="numbers" class="custom" placeholder="Custom"  id="customNum"/>
+            
+            </div>
+            <div class="nuofpeople">
+                <h4 class="people">Number of People</h4>
+                <input oninput="calculateNum(this)" type="number" class="numberofP" id="peopleNumber">
+            </div>
+            
+            
+
+
+            </div>
+            <div class="rightside"> 
+                <div class="tipA">
+                    <p class="tipamount"><span>Tip Amount</span> <br> / person</p>
+                    <p class="dollar"> $0.00</p>
+                    
+                </div>
+                <div class="total">
+                    <p class="totalP"><span>Total</span> <br> / person</p>
+                    <p class="dollar"> $0.00</p>
+                    
+                </div>
+
+                <button class="reset" id="resetAll">reset</button>
+            </div>
+            
+
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
