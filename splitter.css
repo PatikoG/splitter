@@ -49,6 +49,10 @@ header{
     color: #FFFFFF;
 }
 
+/* .input__active {
+    border: 2px solid var(green);
+  } */
+
 .dollabill{
     
     display: flex;
@@ -90,6 +94,7 @@ input::-webkit-inner-spin-button {
     background-image: url(./tip-calculator-app-main/images/icon-dollar.svg);
     background-repeat: no-repeat;
     background-position: 6% 50%;
+    /* caret-color: #26c2ae var(--teal); */
 }
 
 
@@ -130,33 +135,33 @@ input::-webkit-inner-spin-button {
     
 }
 
-.tip5:hover{
+/* .active, .tips:hover{
     background: #26C2AE;
     cursor: pointer;
-}
+} */
 
-.tip10:hover{
-    background: #26C2AE;
-    cursor: pointer;
-}
-
-
-
-.tip15:hover{
-    background: #26C2AE;
-    cursor: pointer;
-}
-
-.tip25:hover{
+/* .active, .tip10:hover{
     background: #26C2AE;
     cursor: pointer;
 }
 
 
-.tip50:hover{
+
+.active, .tip15:hover{
     background: #26C2AE;
     cursor: pointer;
 }
+
+.active, .tip25:hover{
+    background: #26C2AE;
+    cursor: pointer;
+}
+
+
+.active, .tip50:hover{
+    background: #26C2AE;
+    cursor: pointer;
+} */
 
 
 .tip10{
@@ -212,6 +217,12 @@ input::-webkit-inner-spin-button {
     border: none;
 }
 
+
+.active, .tips:hover{
+    background: #26C2AE;
+    cursor: pointer;
+}
+
 .custom{
     display: flex;
     justify-content: flex-end;
@@ -250,6 +261,23 @@ input::-webkit-inner-spin-button {
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
+}
+
+.errorpeople{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.errorZ{
+    display: none;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E17457;
 }
 
 .nuofpeople{
@@ -325,7 +353,6 @@ input::-webkit-inner-spin-button {
 }
 
 .dollar{
-    width: 96px;
     height: 47px;
     font-family: 'Space Mono';
     font-style: normal;
@@ -335,6 +362,9 @@ input::-webkit-inner-spin-button {
     text-align: right;
     letter-spacing: -0.666667px;
     color: #26C2AE;
+    /* max-width: 250px; */
+    
+   
 }
 
 .total{
@@ -352,7 +382,7 @@ input::-webkit-inner-spin-button {
 }
 
 .totalP span{
-    width: 98px;
+    
     height: 24px;
     font-family: 'Space Mono';
     font-style: normal;
@@ -459,13 +489,14 @@ header{
 }
 
 .dollar{
-    width: 143px;
+    max-width: 150px;
     height: 71px;
     font-family: 'Space Mono';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 71px;
+    
 }
 
 .reset{
